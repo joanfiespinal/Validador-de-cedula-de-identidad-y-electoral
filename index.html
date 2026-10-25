@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cédula Dominicana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="icono">🪪</div>
+        <h1>Validador de Cédula</h1>
+        <p class="subtitulo">
+            República Dominicana
+        </p>
+
+        <form id="formulario">
+            <label for="cedula">Número de cédula</label>
+            <input
+                type="text"
+                id="cedula"
+                placeholder="000-0000000-0"
+                maxlength="13"
+                inputmode="numeric"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">Validar cédula</button>
+        </form>
+
+        <div id="resultado" role="status" aria-live="polite">
+            Introduce una cédula para comenzar.
+        </div>
+
+        <p class="nota">
+            Esta herramienta comprueba el formato y el dígito
+            de verificación. No confirma la identidad de una persona.
+        </p>
+    </main>
+</body>
+</html>
